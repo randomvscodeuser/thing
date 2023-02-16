@@ -1,0 +1,60 @@
+<!--https://teachablemachine.withgoogle.com/models/e3UZvGWqI-->
+<html>
+    <head>
+        <title>finger recognition thingy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <center>
+    <body>
+        <div class="container">
+            <h3 class="btn btn-warning heading">finger sign thing jajaja
+            <br>
+            <span>&#128070;</span>
+            <span>&#128072;</span>
+            <span>&#128079;</span>
+            <span>&#128077;</span>
+            <span>&#128075;</span>
+        </h3>
+        <br>
+        <br>
+        <p style="font-size: 22px;">Model is trained to identify the following hand signals</p>
+        <br>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+        <br>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam view - </label>
+            <div id="camera"></div>
+            <br><br>
+            <button onclick="take_snapshot();" class="btn btn-warning">capture image</button>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Prediction 1 - </label>
+                <p class="finger_signal_name" id="result_finger_signal"></p>
+                <p class="finger_sign" id="update_sign"></p>
+        
+                <label>Prediction 2 - </label>
+                <p class="finger_signal_name" id="result_finger_signal2"></p>
+                <p class="finger_sign" id="update_sign2"></p>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-xs-12">
+        
+            <label>Snapshot - </label>
+          <div id="result"></div>
+          <br><br>
+          <button onclick="check();" class="btn btn-success">Predict finger sign</button>
+        </div>
+
+        </div>
+    </center>
+    </body>
+<script src="main.js"></script>
+</html>

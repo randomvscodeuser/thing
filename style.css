@@ -1,0 +1,39 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_finger_signal ,#result_finger_signal2 
+{
+  color: black;
+}
+.finger_signal_name
+{
+  font-size: 40px;
+}
+.finger_sign
+{
+  font-size:48px;
+}
+.heading{
+  font-size: 10px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
+label{
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 10px;
+  background-color: white;
+  color: darkslategray;
+}
