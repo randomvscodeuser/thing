@@ -1,4 +1,4 @@
-<!--https://teachablemachine.withgoogle.com/models/e3UZvGWqI-->
+<!---->
 <html>
     <head>
         <title>finger recognition thingy</title>
@@ -35,24 +35,27 @@
             <div id="camera"></div>
             <br><br>
             <button onclick="take_snapshot();" class="btn btn-warning">capture image</button>
-            <div class="col-md-4 col-sm-12 col-xs-12">
-                <label>Prediction 1 - </label>
-                <p class="finger_signal_name" id="result_finger_signal"></p>
-                <p class="finger_sign" id="update_sign"></p>
-        
-                <label>Prediction 2 - </label>
-                <p class="finger_signal_name" id="result_finger_signal2"></p>
-                <p class="finger_sign" id="update_sign2"></p>
-          </div>
-
-          <div class="col-md-4 col-sm-12 col-xs-12">
-        
-            <label>Snapshot - </label>
-          <div id="result"></div>
-          <br><br>
-          <button onclick="check();" class="btn btn-success">Predict finger sign</button>
         </div>
 
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Prediction 1 - </label>
+            <p class="finger_signal_name" id="result_finger_signal"></p>
+            <p class="finger_sign" id="update_sign"></p>
+    
+            <label>Prediction 2 - </label>
+            <p class="finger_signal_name" id="result_finger_signal2"></p>
+            <p class="finger_sign" id="update_sign2"></p>
+      </div>
+        
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        
+        <label>Snapshot - </label>
+      <div id="result"></div>
+      <br><br>
+      <button onclick="check();" class="btn btn-success">Predict finger sign</button>
+    </div>
+    
         </div>
     </center>
     </body>
